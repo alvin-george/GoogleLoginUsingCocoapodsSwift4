@@ -140,12 +140,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
 }
 
 //ImageView: Extension for
 extension UIImageView {
+    
     func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { (data, response, error) in
